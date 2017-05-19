@@ -26,6 +26,8 @@ public class MyResource {
 	     * to the client as "application/json" media type.
 	     *
 	     * @return List of all ad-campaigns that will be returned as a application/json response.
+	     * 
+	     * URL for testing : http://localhost:8080/ad-camp/webapi/myresource/ 
 	     */
 	@GET
     @Produces(MediaType.APPLICATION_JSON)
@@ -38,6 +40,8 @@ public class MyResource {
      * to the client as "application/json" media type.
      *
      * @return AdCampaignInfo of the partnerId that will be returned as a application/json response.
+     * 
+     * URL for testing : http://localhost:8080/ad-camp/webapi/myresource/{partnerId}
      */
     
     
@@ -54,6 +58,15 @@ public class MyResource {
      * to the client as "application/json" media type.
      *
      * @return AdCampaignInfo of the new partnerId that will be returned as a application/json response.
+     * 
+     * URL for testing : http://localhost:8080/ad-camp/webapi/myresource/ad
+     * 
+     * JSON Sample:
+     * {
+  		"adContent": "Audio",
+  		"duration": 100000,
+  		"partnerId": "com1"
+       }
      */
     
     
